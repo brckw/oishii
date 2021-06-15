@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.oishii.simpleFragments.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_infoMenuFragment"
+            app:destination="@id/infoMenuFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_menuFragment"
+            app:destination="@id/menuFragment">
+        <argument
+            android:name="isTakeAway"
+            app:argType="boolean"
+            android:defaultValue="false"/>
+        </action>
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.oishii.simpleFragments.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+        <argument
+            android:name="isTakeAway"
+            app:argType="boolean"
+            android:defaultValue="true"
+            />
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_infoMenuFragment"
+            app:destination="@id/infoMenuFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_menuFragment"
+            app:destination="@id/menuFragment">
+            <argument
+                android:name="isTakeAway"
+                app:argType="boolean"
+                android:defaultValue="true"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/infoMenuFragment"
+        android:name="com.example.oishii.simpleFragments.InfoMenuFragment"
+        android:label="info Fragment"
+        tools:layout="@layout/fragment_info_menu">
+
+        <action
+            android:id="@+id/action_infoMenuFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_infoMenuFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_infoMenuFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_infoMenuFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.oishii.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.oishii.menu.MenuFragment"
+        android:label="menu_fragment"
+        tools:layout="@layout/menu_fragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.oishii.profile.ProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment" />
+
+</navigation>

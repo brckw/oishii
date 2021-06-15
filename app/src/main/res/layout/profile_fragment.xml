@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".profile.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/default_layout_background" />
+
+    <TextView
+        android:id="@+id/profile_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_custom_profile_text_top"
+        android:text="@string/profil"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_xl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_imageView"
+        android:layout_width="@dimen/custom_profile_picture"
+        android:layout_height="@dimen/custom_profile_picture"
+        android:layout_marginTop="@dimen/space_custom_profile_picture_top"
+        android:src="@drawable/profile_picture_placeholder"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="@dimen/space_1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_textView" />
+
+    <TextView
+        android:id="@+id/profile_name_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_space"
+        android:text="@string/bruker_navn"
+        android:textColor="@color/black"
+        android:textSize="@dimen/infomenu_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_imageView" />
+
+
+    <TextView
+        android:id="@+id/profile_receipt_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_medium"
+        android:text="@string/kvitteringer"
+        android:textColor="@color/black"
+        android:textSize="@dimen/infomenu_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_name_textView" />
+
+    <TextView
+        android:id="@+id/profile_settings_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/very_small_space"
+        android:text="@string/instillinger"
+        android:textColor="@color/black"
+        android:textSize="@dimen/infomenu_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_receipt_textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

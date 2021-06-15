@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".simpleFragments.SecondFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/default_layout_background"/>
+
+    <TextView
+        android:id="@+id/delivery_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/intro_navigation_text"
+        android:text="@string/levering"
+        android:textColor="@color/black"
+        android:layout_marginBottom="@dimen/very_small_space"
+        app:layout_constraintBottom_toTopOf="@id/delivery_imageview"
+        app:layout_constraintEnd_toEndOf="@id/pick_up_imageview"
+        app:layout_constraintStart_toStartOf="@id/pick_up_imageview" />
+
+    <ImageView
+        android:id="@+id/delivery_imageview"
+        android:layout_width="@dimen/medium_icon"
+        android:layout_height="@dimen/medium_icon"
+        android:src="@drawable/oishii_home"
+        android:layout_marginBottom="@dimen/small_space"
+        app:layout_constraintBottom_toTopOf="@id/pick_up_textview"
+        app:layout_constraintEnd_toEndOf="@id/pick_up_imageview"
+        app:layout_constraintStart_toStartOf="@id/pick_up_imageview" />
+
+    <TextView
+        android:id="@+id/pick_up_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/intro_navigation_text"
+        android:text="@string/hente_selv"
+        android:textColor="@color/black"
+
+        android:layout_marginBottom="@dimen/very_small_space"
+        app:layout_constraintBottom_toTopOf="@id/pick_up_imageview"
+        app:layout_constraintEnd_toEndOf="@id/pick_up_imageview"
+        app:layout_constraintStart_toStartOf="@id/pick_up_imageview" />
+
+    <ImageView
+        android:id="@+id/pick_up_imageview"
+        android:layout_width="@dimen/medium_icon"
+        android:layout_height="@dimen/medium_icon"
+        android:layout_marginTop="@dimen/very_large_space"
+        android:src="@drawable/oishii_6_profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

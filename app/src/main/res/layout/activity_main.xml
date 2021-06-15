@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_toolbar"
+        android:background="?attr/colorPrimary"
+        app:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/back_arrow_imageview"
+            android:layout_width="@dimen/small_icon"
+            android:layout_height="@dimen/small_icon"
+            android:layout_marginTop="@dimen/custom_appbar_arrow_spaceTop"
+            android:elevation="@dimen/default_elevation_value"
+            android:src="@drawable/oishii_arrow"
+             />
+
+        <ImageView
+            android:id="@+id/info_menu_imageview"
+            android:layout_width="@dimen/custom_appbar_home_width"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="@dimen/custom_appbar_home_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/small_space"
+            android:elevation="@dimen/default_elevation_value"
+            android:src="@drawable/oishii_menu"
+           />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <include layout="@layout/content_main" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

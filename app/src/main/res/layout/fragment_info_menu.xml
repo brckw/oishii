@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".simpleFragments.InfoMenuFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/default_layout_background"/>
+
+    <ImageView
+        android:id="@+id/red_x_imageview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="@dimen/default_elevation_value"
+        android:layout_width="@dimen/larege_icon"
+        android:layout_height="@dimen/larege_icon"
+        android:src="@drawable/red_x"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/very_small_space"
+        android:layout_marginEnd="@dimen/small_space" />
+    <TextView
+        android:id="@+id/login_textview"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/large_space"
+        android:textSize="@dimen/infomenu_text"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="@string/profil"
+        />
+    <TextView
+        android:id="@+id/about_us_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/login_textview"
+        app:layout_constraintEnd_toEndOf="@id/login_textview"
+        app:layout_constraintStart_toStartOf="@id/login_textview"
+        android:textSize="@dimen/infomenu_text"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:text="@string/om"
+        />
+    <TextView
+        android:id="@+id/kontakt_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/infomenu_text"
+        android:layout_marginTop="@dimen/space_medium"
+        app:layout_constraintTop_toBottomOf="@id/about_us_textview"
+        app:layout_constraintEnd_toEndOf="@id/login_textview"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/login_textview"
+        android:text="@string/kontakt"
+        />
+    <TextView
+        android:id="@+id/bestill_bord_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/infomenu_text"
+        android:layout_marginTop="@dimen/space_medium"
+        app:layout_constraintTop_toBottomOf="@id/kontakt_textview"
+        app:layout_constraintEnd_toEndOf="@id/login_textview"
+        app:layout_constraintStart_toStartOf="@id/login_textview"
+        android:textColor="@color/black"
+        android:text="@string/bestill_bord"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

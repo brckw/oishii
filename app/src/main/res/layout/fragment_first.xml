@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".simpleFragments.FirstFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/default_layout_background"/>
+
+    <TextView
+        android:id="@+id/eat_at_restaurant_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/intro_navigation_text"
+        android:text="@string/spise_inne"
+        android:textColor="@color/black"
+        android:layout_marginBottom="@dimen/very_small_space"
+        app:layout_constraintBottom_toTopOf="@id/eat_at_restaurant_imageview"
+        app:layout_constraintEnd_toEndOf="@id/take_away_imageView"
+        app:layout_constraintStart_toStartOf="@id/take_away_imageView" />
+
+    <ImageView
+        android:id="@+id/eat_at_restaurant_imageview"
+        android:layout_width="@dimen/medium_icon"
+        android:layout_height="@dimen/medium_icon"
+        android:src="@drawable/oishii_1_ramen_noodels"
+        android:layout_marginBottom="@dimen/small_space"
+        app:layout_constraintBottom_toTopOf="@id/take_away_textview"
+        app:layout_constraintEnd_toEndOf="@id/take_away_imageView"
+        app:layout_constraintStart_toStartOf="@id/take_away_imageView" />
+
+    <TextView
+        android:id="@+id/take_away_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/intro_navigation_text"
+        android:text="@string/take_away"
+        android:textColor="@color/black"
+        android:layout_marginBottom="@dimen/very_small_space"
+        app:layout_constraintBottom_toTopOf="@id/take_away_imageView"
+        app:layout_constraintEnd_toEndOf="@id/take_away_imageView"
+        app:layout_constraintStart_toStartOf="@id/take_away_imageView" />
+
+    <ImageView
+        android:id="@+id/take_away_imageView"
+        android:layout_width="@dimen/medium_icon"
+        android:layout_height="@dimen/medium_icon"
+        android:layout_marginTop="@dimen/very_large_space"
+        android:src="@drawable/oishii_3_takeaway"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

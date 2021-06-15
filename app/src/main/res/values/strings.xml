@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">oishii</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="spise_inne">spise inne</string>
+    <string name="hente_selv">hente selv</string>
+    <string name="levering">levering</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profil">profil</string>
+    <string name="om">om</string>
+    <string name="kontakt">kontakt</string>
+    <string name="bestill_bord">bestill bord</string>
+    <string name="X">X</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login">login</string>
+    <string name="registrer">registrer</string>
+    <string name="fortsett_uten_bruker">fortsett uten bruker</string>
+    <string name="add_to_cart">add to cart</string>
+    <string name="dine_inne">dine inne</string>
+    <string name="kr">kr</string>
+    <string name="menu">menu</string>
+    <string name="take_away">take away</string>
+    <string name="bruker_navn">bruker navn</string>
+    <string name="kvitteringer">kvitteringer</string>
+    <string name="instillinger">instillinger</string>
+</resources>

@@ -1,0 +1,45 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="medium_icon">100dp</dimen>
+    <dimen name="large_space">100dp</dimen>
+    <dimen name="intro_navigation_text">24sp</dimen>
+    <dimen name="small_space">25dp</dimen>
+    <dimen name="very_large_space">150dp</dimen>
+    <dimen name="very_small_space">10dp</dimen>
+    <dimen name="default_elevation_value">10dp</dimen>
+    <dimen name="small_icon">40dp</dimen>
+    <dimen name="micro_space">5dp</dimen>
+    <dimen name="infomenu_text">28sp</dimen>
+    <dimen name="larege_icon">60dp</dimen>
+    <dimen name="logo_icon">160dp</dimen>
+    <dimen name="small_medium_icon">50dp</dimen>
+    <dimen name="custom_appbar_home_height">65dp</dimen>
+    <dimen name="custom_appbar_home_width">60dp</dimen>
+    <dimen name="custom_appbar_arrow_spaceTop">13dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="xl_space">230dp</dimen>
+    <dimen name="custom_toolbar">65dp</dimen>
+    <dimen name="dish_text_size">20sp</dimen>
+    <dimen name="size_text_small">10sp</dimen>
+    <dimen name="size_text_small_medium">18sp</dimen>
+    <dimen name="space_medium">30dp</dimen>
+    <dimen name="space_medium_large">40dp</dimen>
+    <dimen name="space_custom_category_top">22dp</dimen>
+    <dimen name="space_custom_category_start">16dp</dimen>
+    <dimen name="space_1dp">1dp</dimen>
+    <dimen name="space_custom_line_start">6dp</dimen>
+    <dimen name="space_small_medium">18dp</dimen>
+    <dimen name="space_large_medium">50dp</dimen>
+    <dimen name="text_size_large">36sp</dimen>
+    <dimen name="text_size_large_medium">26sp</dimen>
+    <dimen name="space_custom_menu_top">35dp</dimen>
+    <dimen name="space_custom_recyclerView_bottom">35dp</dimen>
+    <dimen name="custom_shopping_cart">70dp</dimen>
+    <dimen name="space_small_large">20dp</dimen>
+    <dimen name="space_custom_profile_text_top">55dp</dimen>
+    <dimen name="text_size_xl">40sp</dimen>
+    <dimen name="custom_profile_picture">140dp</dimen>
+    <dimen name="space_custom_profile_picture_top">35dp</dimen>
+</resources>
